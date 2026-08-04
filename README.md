@@ -97,16 +97,3 @@ Sesuaikan kontrak response pada `src/features/auth/services/auth.service.ts` bil
 ## Catatan keamanan
 
 Variabel dengan prefix `EXPO_PUBLIC_` masuk ke bundle aplikasi. Jangan simpan secret, private key, atau credential server di `.env` aplikasi mobile.
-
-
-## Perbaikan jika sebelumnya memakai SDK 57
-
-Di PowerShell, jalankan dari folder project:
-
-```powershell
-Set-ExecutionPolicy -Scope Process Bypass
-.\fix-sdk54.ps1
-npx expo start -c
-```
-
-Pastikan Expo Go di Android dan iPhone sudah diperbarui dari store sebelum memindai QR.
